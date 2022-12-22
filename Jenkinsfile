@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Build Backend') {
             steps {
-                sh 'sudo apt install -y maven'
+                sh 'apt install -y maven'
                 sh 'mvn clean package -DskipTest=true'
             }
         }
