@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sleep(10)
                 timeout(time: 1, unit: 'MINUTES') {
-                    waitForQualityGate(webhookSecretId: 'squ_3ba5c765349581ddce4e1947d407691e3f4de1ff') abortPipeline: true
+                    waitForQualityGate abortPipeline: true
                 }
             }
         }
